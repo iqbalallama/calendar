@@ -1,2 +1,11 @@
-const month = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-const day = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+const current = new Date();
+const date = current.getDate();
+const day = days[current.getDay()];
+const month = months[current.getMonth()];
+const year = current.getFullYear();
+document.getElementById('date').innerText = `${date}`
+document.getElementById('mnth').innerText = `${month}`
+document.getElementById('day').innerText = `${day}`
+document.getElementById('year').innerText = `${year}`
