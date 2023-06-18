@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    width: 400px;
+    height: 400px;
+    background-color:deepskyblue;
+    border-radius: 15px;
+    border: none;
+}
